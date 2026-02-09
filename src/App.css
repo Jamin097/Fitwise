@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.app {
+    display:flex;
+    overflow: hidden; 
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    width: 60px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content {
+    flex: 1;
+    padding: 0%;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+/* Friends list & similar side panels */
+.friends-list, .live-map {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Spacing between sections */
+.header, .overview, .activity-cards {
+    margin-bottom: 15px;
+}
+
+/* Default progress bar, used by Overview and ActivityCards if needed */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #6c5ce7;
+    border-radius: 5px;
+}
+
+/* ---------------- LOGIN & SIGNUP PAGE ---------------- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a4c93, #b088f9);
+}
+
+.auth-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form input, .auth-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.auth-form input:focus, .auth-form select:focus {
+    border-color: #6a4c93;
+    box-shadow: 0 0 5px rgba(106, 76, 147, 0.5);
+}
+
+.auth-btn {
+    background: #6a4c93;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: #53357a;
+}
+
+.switch-auth {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch-auth a {
+    color: #6a4c93;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.switch-auth a:hover {
+    color: #53357a;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.main-content {
+    margin-left: 60px;  /* same as sidebar width */
+    padding: 20px;      /* optional for spacing */
+    min-height: 100vh;
+    width: calc(100% - 60px); /* optional */
+}
+
+
+

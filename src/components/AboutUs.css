@@ -1,0 +1,190 @@
+/* ===== Entire About Us Page ===== */
+.aboutus-container {
+  width: 95vw;
+  min-height: 100vh;
+  padding: 40px 80px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+  border-radius: 22px;
+  margin: 12px auto;
+  position: relative;
+  overflow-x: hidden;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* subtle radial glow like Workout.css */
+.aboutus-container::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(31,60,136,0.12), transparent 70%);
+  pointer-events: none;
+}
+
+/* Centered content wrapper */
+.aboutus-content {
+  max-width: 960px;      /* unified max width */
+  margin: 0 auto;
+  padding: 0 15px;       /* small horizontal padding for mobile */
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+}
+
+.hero-content h1 {
+  display: inline-block;
+  margin: 0 auto 20px auto;
+  padding: 18px 36px;
+  border-radius: 28px; /* pill shape */
+  background: linear-gradient(135deg, #1f3c88, #4a69bd);
+  box-shadow: 0 14px 35px rgba(31, 60, 136, 0.35);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 26px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Features grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  border-radius: 20px;
+  padding: 32px 26px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(31, 60, 136, 0.25);
+  background: linear-gradient(135deg, #eef3ff, #ffffff);
+}
+
+.feature-icon {
+  font-size: 2.3rem;
+  margin-bottom: 14px;
+  color: #1f3c88;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1f3c88;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Feedback Section */
+.feedback-section {
+  max-width: 960px;     /* same as aboutus-content / feature cards container */
+  margin: 60px auto 0;  /* center it */
+  padding: 35px 25px;
+  background: #f9f9f9;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 1.8rem;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #1f3c88;
+  box-shadow: 0 0 0 2px rgba(31, 60, 136, 0.1);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #1f3c88, #4a69bd);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(31, 60, 136, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutus-container {
+    padding: 20px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* subtle lift */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

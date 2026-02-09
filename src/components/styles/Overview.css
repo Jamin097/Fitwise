@@ -1,0 +1,76 @@
+/* ===== Root container ===== */
+.overview {
+  display: flex;              /* make column flex layout */
+  flex-direction: column;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+  border-radius: 24px;
+  padding: 40px 60px;
+  margin: 24px;
+  margin-top: 12px;
+ 
+  height: 900px;              /* total height */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* ===== Overview Header + Stats ===== */
+.overview-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+/* ===== Chart Container ===== */
+.chart-container {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 16px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  
+  flex: 1;                    /* fills remaining space */
+  display: flex;
+  flex-direction: grid;
+  min-height: 30px;          /* ensures chart always has some height */
+}
+
+/* Chart wrapper */
+.chart-wrapper {
+  flex: 1;                    /* fill the container */
+  position: relative;          /* required for Chart.js */
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;    /* canvas fills the wrapper fully */
+}
+
+/* ===== Overview-only Header ===== */
+.overview-local-header {
+  width: 97%;
+  height: 58px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  border-radius: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 16px 16px 0;
+}
+
+.overview-logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+

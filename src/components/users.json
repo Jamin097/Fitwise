@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "user_id": 7,
+      "name": "Jaimin",
+      "email": "jaimin@gmail.com",
+      "age": 19,
+      "gender": "male",
+      "height_cm": 170,
+      "weight_kg": 80
+    },
+    {
+      "user_id": 10,
+      "name": "Rudransh",
+      "email": "r@gmail.com",
+      "age": 19,
+      "gender": "Male",
+      "height_cm": 190,
+      "weight_kg": 70
+    },
+    {
+      "user_id": 11,
+      "name": "Man",
+      "email": "m@mail.com",
+      "age": 19,
+      "gender": "Male",
+      "height_cm": 175,
+      "weight_kg": 70
+    },
+    {
+      "user_id": 12,
+      "name": "Mitanshu",
+      "email": "mitanshu@mail.com",
+      "age": 19,
+      "gender": "Male",
+      "height_cm": 170,
+      "weight_kg": 65
+    },
+    {
+      "user_id": 13,
+      "name": "Maitri",
+      "email": "maitri@gmail.com",
+      "age": 19,
+      "gender": "Female",
+      "height_cm": 165,
+      "weight_kg": 50
+    },
+    {
+      "user_id": 14,
+      "name": "Vaidehi",
+      "email": "v@gmail.com",
+      "age": 20,
+      "gender": "Female",
+      "height_cm": 165,
+      "weight_kg": 50
+    }
+  ]
+}

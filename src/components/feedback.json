@@ -1,0 +1,50 @@
+[
+  {
+    "feedback_id": 1,
+    "user_name": "Aarav Patel",
+    "email": "aarav.patel@gmail.com",
+    "message": "FitWise has completely changed how disciplined I am with workouts. The progress tracking is clean and motivating.",
+    "rating": 5,
+    "submitted_at": "2026-01-18 09:45:12"
+  },
+  {
+    "feedback_id": 2,
+    "user_name": "Neha Sharma",
+    "email": "neha.sharma@gmail.com",
+    "message": "Love the simplicity of the interface. No clutter, just what I need to stay consistent.",
+    "rating": 4,
+    "submitted_at": "2026-01-22 18:30:44"
+  },
+  {
+    "feedback_id": 3,
+    "user_name": "Rohit Verma",
+    "email": "rohit.verma@gmail.com",
+    "message": "The discipline-first mindset of FitWise really stands out compared to other fitness apps.",
+    "rating": 5,
+    "submitted_at": "2026-01-28 07:12:09"
+  },
+  {
+    "feedback_id": 4,
+    "user_name": "Sneha Iyer",
+    "email": "sneha.iyer@gmail.com",
+    "message": "Would love more customization in workout plans, but overall the experience has been smooth and motivating.",
+    "rating": 4,
+    "submitted_at": "2026-02-02 21:05:33"
+  },
+  {
+    "feedback_id": 5,
+    "user_name": "Kunal Mehta",
+    "email": "kunal.mehta@gmail.com",
+    "message": "Finally an app that focuses on consistency instead of unrealistic shortcuts. Great work.",
+    "rating": 5,
+    "submitted_at": "2026-02-05 06:55:01"
+  },
+  {
+    "feedback_id": 6,
+    "user_name": "Priya Nair",
+    "email": "priya.nair@gmail.com",
+    "message": "Clean UI, meaningful data, and no unnecessary distractions. Exactly what I wanted.",
+    "rating": 5,
+    "submitted_at": "2026-02-07 14:40:18"
+  }
+]

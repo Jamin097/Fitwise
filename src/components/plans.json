@@ -1,0 +1,64 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Beginner Muscle Gain",
+      "goal": "muscle gain",
+      "created_at": "2026-02-01"
+    },
+    {
+      "id": 2,
+      "name": "Weight Loss Starter",
+      "goal": "weight loss",
+      "created_at": "2026-02-01"
+    },
+    {
+      "id": 3,
+      "name": "Flexibility Boost",
+      "goal": "flexibility",
+      "created_at": "2026-02-02"
+    },
+    {
+      "id": 4,
+      "name": "Advanced Hypertrophy",
+      "goal": "muscle gain",
+      "created_at": "2026-02-02"
+    },
+    {
+      "id": 5,
+      "name": "Home Workout Plan",
+      "goal": "general fitness",
+      "created_at": "2026-02-03"
+    },
+    {
+      "id": 6,
+      "name": "Athlete Conditioning",
+      "goal": "performance",
+      "created_at": "2026-02-03"
+    },
+    {
+      "id": 7,
+      "name": "Fat Burn Express",
+      "goal": "weight loss",
+      "created_at": "2026-02-04"
+    },
+    {
+      "id": 8,
+      "name": "Vegetarian Muscle Plan",
+      "goal": "muscle gain",
+      "created_at": "2026-02-04"
+    },
+    {
+      "id": 9,
+      "name": "Evening Workout Routine",
+      "goal": "general fitness",
+      "created_at": "2026-02-05"
+    },
+    {
+      "id": 10,
+      "name": "Rehab & Recovery",
+      "goal": "recovery",
+      "created_at": "2026-02-05"
+    }
+  ]
+}

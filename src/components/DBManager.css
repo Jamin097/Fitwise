@@ -1,0 +1,206 @@
+/* ==============================
+   DBManager Scoped Dark Style - Fixed Text Contrast
+   ============================== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Main container */
+.db-manager {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  backdrop-filter: blur(20px);
+  background: rgba(20, 20, 40, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0; /* slightly off-white for contrast */
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Header */
+.db-manager .header-pill {
+  background: linear-gradient(135deg, #00d4ff, #00a8cc);
+  color: #f0f0f0; /* off-white for better visibility */
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+/* Messages */
+.db-manager .msg {
+  background: linear-gradient(135deg, #2ed573, rgba(46, 213, 115, 0.85));
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.db-manager .card {
+  background: rgba(30, 30, 60, 0.85);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+  color: #f0f0f0; /* off-white */
+}
+
+.db-manager .card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #f0f0f0; /* off-white */
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Inputs */
+.db-manager input {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(40, 40, 60, 0.85);
+  color: #f0f0f0; /* off-white */
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+}
+
+.db-manager input::placeholder {
+  color: #c0c0c0; /* slightly lighter for contrast */
+}
+
+.db-manager input:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  background: rgba(50, 50, 80, 0.9);
+  color: #ffffff;
+}
+
+/* Buttons */
+.db-manager button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0; /* off-white */
+}
+
+.db-manager .card button {
+  background: linear-gradient(135deg, #2ed573, rgba(46, 213, 115, 0.85));
+  color: #f0f0f0;
+}
+
+.db-manager .card button:hover {
+  background: linear-gradient(135deg, rgba(46, 213, 115, 0.85), #2ed573);
+  color: #ffffff;
+}
+
+.db-manager .danger {
+  background: linear-gradient(135deg, #ff4757, rgba(255, 71, 87, 0.85));
+  color: #f0f0f0;
+}
+
+.db-manager .danger:hover {
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.85), #ff4757);
+  color: #ffffff;
+}
+
+.db-manager .logout-btn {
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
+  color: #f0f0f0;
+  align-self: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.db-manager .logout-btn:hover {
+  background: linear-gradient(135deg, #ba68c8, #9c27b0);
+  color: #ffffff;
+}
+
+/* Tables */
+.db-manager table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(30, 30, 60, 0.85);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+}
+
+.db-manager th,
+.db-manager td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f0f0f0;
+}
+
+.db-manager th {
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.db-manager tbody tr:nth-child(odd) {
+  background: rgba(50, 50, 80, 0.7);
+  color: #f0f0f0;
+}
+
+.db-manager tbody tr:hover {
+  background: rgba(0, 212, 255, 0.15);
+  color: #000000; /* black text on hover for max contrast */
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.25);
+}
+
+/* Scrollbar */
+.db-manager ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.db-manager ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.db-manager ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00d4ff, #00a8cc);
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .db-manager { padding: 15px; }
+  .db-manager .card { padding: 15px; }
+  .db-manager th, .db-manager td { padding: 10px 12px; }
+}

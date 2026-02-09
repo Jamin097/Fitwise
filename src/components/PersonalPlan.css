@@ -1,0 +1,217 @@
+/* ===== Page container ===== */
+.personal-plan-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 80px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5); /* soft gradient */
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  position: relative;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Title - pill shaped & perfectly centered */
+.personal-plan-container h2 {
+  text-align: center;           /* center the text */
+  display: block;               /* ensures it's a block element */
+  width: fit-content;           /* shrink to content width */
+  margin: 0 auto 35px auto;     /* center horizontally with auto margins */
+  font-size: 34px;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 28px;          /* pill shape */
+  color: #fff;
+  background: linear-gradient(135deg, #1f3c88, #4a69bd);
+  box-shadow: 0 12px 30px rgba(31, 60, 136, 0.35);
+}
+
+
+/* ===== Form ===== */
+.personal-plan-form {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  background: linear-gradient(135deg, #ffffff, #f5f7fa);
+  padding: 40px 50px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Rows ===== */
+.personal-plan-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+/* ===== Inputs & Selects ===== */
+.personal-plan-form input,
+.personal-plan-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #ccd6e0;
+  font-size: 15px;
+  background: #f8fafc;
+  transition: all 0.25s ease;
+}
+
+.personal-plan-form input:focus,
+.personal-plan-form select:focus {
+  outline: none;
+  border-color: #1f3c88;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(31, 60, 136, 0.15);
+}
+
+/* ===== Error ===== */
+.error {
+  text-align: center;
+  color: #e74c3c;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* ===== Primary Button - gradient & rounded ===== */
+.primary-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1f3c88, #4a69bd);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(31, 60, 136, 0.35);
+}
+
+/* ===== Loading ===== */
+.loading {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 500;
+  color: #4a69bd;
+}
+
+/* ===== Plan Result ===== */
+.plan-result {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, #f5f7fa);
+  padding: 45px 55px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Headings ===== */
+.plan-result h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.plan-result h4 {
+  margin: 35px 0 15px;
+  font-size: 20px;
+  color: #34495e;
+}
+
+/* ===== Small text ===== */
+.small {
+  text-align: center;
+  font-size: 14px;
+  color: #6c7a89;
+}
+
+.muted {
+  color: #7f8c8d;
+}
+
+/* ===== Summary Cards ===== */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(135deg, #f5f7fa, #ffffff);
+  padding: 22px 26px;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #1f3c88;
+}
+
+/* ===== Weekly workouts ===== */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.day-card {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Meals ===== */
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.meal-card {
+  background: linear-gradient(135deg, #fdfefe, #f7f9fc);
+  padding: 18px 22px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.when {
+  font-weight: 600;
+  color: #1f3c88;
+}
+
+.cal {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+/* ===== Guidelines ===== */
+.guidelines {
+  padding-left: 20px;
+}
+
+.guidelines li {
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* subtle lift */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

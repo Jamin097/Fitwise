@@ -1,0 +1,161 @@
+/* PersonalPlan.css */
+
+:root{
+  --green-dark: #1b4332;
+  --green-mid: #2d6a4f;
+  --bg: #ffffff;
+  --card-bg: #f8fff8;
+  --muted: #6b7a72;
+}
+
+.personal-plan-container {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--green-dark);
+  padding: 28px;
+  border-radius: 14px;
+  max-width: 1000px;
+  margin: 32px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(27,67,50,0.08);
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  color: var(--green-dark);
+}
+
+.personal-plan-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.personal-plan-form .row {
+  display: flex;
+  overflow: hidden; 
+  gap: 10px;
+}
+
+.personal-plan-form input,
+.personal-plan-form select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--green-dark);
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+  color: var(--green-dark);
+  flex: 1;
+}
+
+.personal-plan-form input::placeholder { color: var(--muted); }
+
+.primary-btn {
+  background-color: var(--green-dark);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 6px;
+  width: 180px;
+  justify-self: start;
+  transition: background-color .18s ease, transform .08s ease;
+}
+
+.primary-btn:hover {
+  background-color: var(--green-mid);
+  transform: translateY(-1px);
+}
+
+/* error / loading */
+.error { color: #b00020; margin: 8px 0; font-weight: 600; }
+.loading { color: var(--green-mid); margin: 8px 0; }
+
+/* plan display */
+.plan-result {
+  margin-top: 18px;
+  background: linear-gradient(180deg, #fff, var(--card-bg));
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid rgba(27,67,50,0.06);
+}
+
+.plan-result h3 { margin: 0 0 6px; color: var(--green-dark); }
+.small { font-size: 13px; color: var(--muted); margin: 6px 0; }
+.muted { color: var(--muted); font-size: 13px; }
+
+/* summary grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(27,67,50,0.04);
+}
+
+.card h4 { margin: 0 0 6px; color: var(--green-mid); }
+
+/* weekly workout grid */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+.day-card {
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(27,67,50,0.03);
+  min-height: 90px;
+}
+
+.day-card strong { display: block; margin-bottom: 6px; color: var(--green-dark); }
+
+/* meals */
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.meal-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(27,67,50,0.03);
+}
+
+.meal-card ul { padding-left: 0; list-style: none; margin: 0; }
+.meal-card li { margin: 6px 0; font-size: 14px; color: var(--green-dark); }
+.meal-card .when { font-weight: 600; margin-right: 6px; color: var(--green-mid); }
+.meal-card .cal { float: right; color: var(--muted); font-weight: 600; }
+
+/* guidelines and habits */
+.guidelines { margin: 10px 0; padding-left: 18px; color: var(--muted); }
+.guidelines li { margin: 6px 0; }
+
+/* responsive */
+@media (max-width: 880px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  .personal-plan-form .row { flex-direction: column; }
+  .primary-btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .personal-plan-container { padding: 16px; margin: 12px; }
+  .week-grid { grid-template-columns: repeat(2, 1fr); }
+}
