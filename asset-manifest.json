@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fitwise/static/css/main.0a7e9879.css",
+    "main.js": "/Fitwise/static/js/main.57d21a42.js",
+    "index.html": "/Fitwise/index.html",
+    "main.0a7e9879.css.map": "/Fitwise/static/css/main.0a7e9879.css.map",
+    "main.57d21a42.js.map": "/Fitwise/static/js/main.57d21a42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a7e9879.css",
+    "static/js/main.57d21a42.js"
+  ]
+}
